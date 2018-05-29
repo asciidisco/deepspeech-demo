@@ -1,0 +1,24 @@
+{
+  "name": "deepspeech-demo",
+  "version": "1.0.0",
+  "description": "Demo for Mozilla Deepspeech",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "node postinstall.js"
+  },
+  "author": "Sebastian Golasch <public@asciidisco.com> (https://asciidisco.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "deepspeech": "0.1.1",
+    "express": "4.16.3",
+    "express-static": "1.2.5",
+    "progress": "2.0.0",
+    "socket.io": "2.1.1",
+    "socket.io-client": "2.1.1",
+    "socket.io-stream": "0.9.1",
+    "tar": "4.4.4",
+    "webrtc-adapter": "6.2.1",
+    "wget-improved": "3.0.1"
+  }
+}

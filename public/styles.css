@@ -1,0 +1,60 @@
+html {overflow: hidden}
+
+body {
+  font: 14pt Arial, sans-serif;
+  background: url('cool-background.png');
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  margin: 0}
+
+canvas {
+  display: flex;
+  align-self: top;
+  background: #202020;
+  width: 50%;
+  height: 25%;
+  margin: 2rem;
+  box-shadow: 0px 0px 10px blue}
+
+main {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center}
+
+button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px}
+
+#result {
+  color: #fff;
+  background-color: #333;
+  width: 50%;
+  padding: 2rem;
+  margin-top: 5%;
+  border-radius: 20px}
+
+@media (orientation: landscape) {
+  body {flex-direction: row}
+  #controls {
+    flex-direction: column;
+    height: 100%;
+    width: 10%}
+  main {
+    height: 100%;
+    width: 90%}
+}

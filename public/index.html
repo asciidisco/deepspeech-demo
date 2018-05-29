@@ -1,0 +1,22 @@
+
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Deepspeech Demo</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+	<main>
+		<canvas id="analyser" width="512" height="250"></canvas>
+		<canvas id="wavedisplay" width="512" height="250"></canvas>
+		<button onclick="toggleRecording(this)">Listen</button>
+		<div id="result"></div>
+	</main>
+	<script src="adapter.js"></script>
+	<script src="socket.io.js"></script>
+	<script src="socket.io-stream.js"></script>
+	<script src="recorder.js"></script>
+	<script src="main.js"></script>	
+</body>
+</html>
