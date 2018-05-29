@@ -1,3 +1,4 @@
+const fs = require('fs')
 const wget = require('wget-improved')
 const ProgressBar = require('progress')
 const tar = require('tar')
@@ -20,4 +21,6 @@ download.on('end', async _ => {
   console.log('Extracting tar archive...')
   await tar.x({file: output})
   console.log('Done extracting archive')
+  console.log('Removinf temporary tar archive...')
+  fs.unlinkSync(output)
 })
